@@ -28,15 +28,15 @@ const Home = () => {
     <div className="flex flex-col items-center">
       <div className="text-center pt-8">
         <p className="text-3xl font-semibold font-mono">Dashboard</p>
-        <input
+        <input 
           type="text"
-          className=" px-8 py-2 bg-slate-100 shadow-lg"
+          className=" px-5 py-2 bg-slate-100 shadow-lg"
           placeholder="Write the Title of Your Code"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <button
-          className="bg-slate-600 text-white font-semibold px-4 py-2 m-3 shadow-xl"
+          className="bg-slate-600 text-white font-semibold px-3 py-2 ml-3 shadow-xl"
           onClick={createPage}
         >
           {pageId ? "Update Page" : "Create Page"}
@@ -44,7 +44,7 @@ const Home = () => {
       </div>
       <div className="flex justify-center py-5">
         <textarea
-          className="min-w-[400px] bg-slate-100  p-3 shadow-lg"
+          className="min-w-[385px] bg-slate-100  p-3 shadow-lg"
           placeholder="Enter Your Code Here"
           rows={20}
           value={value}
